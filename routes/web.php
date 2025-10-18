@@ -21,5 +21,4 @@ Route::get('mahasiswa', function () {
 Route::get('profile', function () {
     $nama = 'Silvi';
     return view('profile', compact('nama'));
-    return view('profile')->with('nama', $nama);
-});
+}); 
