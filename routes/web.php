@@ -15,16 +15,13 @@ Route::get('about', function () {
 });
 
 Route::get('mahasiswa', function () {
-    return view('mahasiswa');
+    $npm = [123,124,125,126];
+    $nama = ['Silvi Rahmawati','Fira Alifia Putri','Uswatun Hasanah','Rasheed Al Ghifari Akbar'];
+    $jumlah = count($npm);
+    return view('mahasiswa',compact('npm','jumlah','nama'));
 });
 
 Route::get('profile', function () {
     $nama = 'Silvi';
     return view('profile', compact('nama'));
-}); 
-
-Route::get('array',function(){
-    for ($i=1; $i <= 5; $i++) {
-        echo 'Hello World ' . $i .'x<br>';
-    }
 });

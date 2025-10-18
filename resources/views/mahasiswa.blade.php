@@ -54,33 +54,22 @@
       </tr>
     </thead>
     <tbody>
+      <?php $nilai_awal = 0; ?>
+      @while ($nilai_awal < $jumlah)
+
       <tr>
-        <td>0702232100</td>
-        <td>Silvi Rahmawati</td>
+        <td>{{ $npm[$nilai_awal] }}</td>
+        <td>{{ $nama[$nilai_awal] }}</td>
         <td>Perempuan</td>
         <td>14-07-2005</td>
-        <td rowspan="4">Tegal</td>
+        <td> ta Tegal</td>
       </tr>
-      <tr>
-        <td>0702232101</td>
-        <td>Fira Alifia Putri</td>
-        <td>Perempuan</td>
-        <td>16-07-2017</td>
-      </tr>
-      <tr>
-        <td>0702232102</td>
-        <td>Uswatun Hasanah</td>
-        <td>Perempuan</td>
-        <td>15-07-2020</td>
-      </tr>
-      <tr>
-        <td>0702232103</td>
-        <td>Rasheed Al Ghifari Akbar</td>
-        <td>Laki-Laki</td>
-        <td>05-08-2025</td>
-      </tr>
+
+      <?php $nilai_awal++ ?>
+      @endwhile
     </tbody>
   <table>
+
 </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
