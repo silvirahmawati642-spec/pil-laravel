@@ -16,7 +16,7 @@ Route::get('about', function () {
 
 Route::get('mahasiswa', function () {
     $npm = [123,124,125,126];
-    $nama = ['Silvi Rahmawati','Fira Alifia Putri','Uswatun Hasanah','Rasheed Al Ghifari Akbar'];
+    $nama = ['Silvi Rahmawati','Fira Alifia Putri','Uswatun Hasanah','Ruroh'];
     $jumlah = count($npm);
     return view('mahasiswa',compact('npm','jumlah','nama'));
 });
