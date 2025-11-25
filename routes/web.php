@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\mahasiswaController;
+use App\Http\Controllers\MahasiswaController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('mahasiswa',[mahasiswaController::class, 'index']);
+Route::resource('mahasiswa',MahasiswaController::class);
